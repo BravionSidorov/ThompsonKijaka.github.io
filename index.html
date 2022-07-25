@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="big-box">
+        <table id="big-tab" width="100%">
+            <p style="font-size: 50px!important">Grade Calculator</p>
+            <tbody>
+                <tr class="heading">
+                    <th>Subject Name</th>
+                    <th>TC</th>
+                    <th>Average Grade (10)</th>
+                    <th>Letter Grade</th>
+                    <th>Interact</th>
+                </tr>
+            </tbody>
+        </table>
+        <div id="small-box">
+            <input class="last-line submit" name="calc" type="submit" value="Calculate">
+
+            <table width="40%" style="margin-top: 10px; float: right">
+                <tr>
+                    <td width="60%" class="heading">Average (10)</td>
+                    <td><input id="ten-res" class="out-tab" type="text" value="" readonly></td>
+                </tr>
+                <tr>
+                    <td width="40%" class="heading">Average (4)</td>
+                    <td><input id="four-res" class="out-tab" type="text" value="" readonly></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
