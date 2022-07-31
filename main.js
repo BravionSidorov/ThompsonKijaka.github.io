@@ -14,7 +14,7 @@ function addSubject(originTable, id) {
     </td>
     <td>
         <input name="ten-grade" class="typing in-tab" id="sub-${id}" type="text" value=""
-            onblur="checkingGrade(this, Number(this.value)); findLetter(Number(this.value), 'sub-${id}')"
+            onblur="checkingGrade(this, Number(this.value), 'sub-${id}')"
             placeholder="Nhập điểm: 0 - 10.0" maxlength="4">
     </td>
     <td>
@@ -48,11 +48,11 @@ function checkingTC(element, TC) {
         element.value = null;
     } else return true;
 }
-function checkingGrade(element, grade) {
+function checkingGrade(element, grade, id) {
     if (isNaN(grade) || !(0 <= grade && grade <= 10)) {
         alert('Please Type Again!');
         element.value = null;
-    } else return true;
+    } else findLetter(grade, id);
 }
 
 function deleteSub(element) {
